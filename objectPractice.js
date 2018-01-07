@@ -82,3 +82,29 @@ console.log(phoneticLookup("charlie"));
 console.log(phoneticLookup("bravo"));
 console.log(phoneticLookup("foxtrot"));
 console.log(phoneticLookup("echo"));
+
+
+//Delete Object Properties
+// Example
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog.bark;
+console.log(ourDog);
+
+// Setup
+var myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["Free Code Camp Campers"],
+  "bark": "woof"
+};
+
+delete myDog["tails"];
+console.log(myDog);
