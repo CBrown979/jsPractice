@@ -108,3 +108,40 @@ var myDog = {
 
 delete myDog["tails"];
 console.log(myDog);
+
+//Testing Objects for Properties 
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh"
+};
+
+function checkObj(checkProp) { //create a function called checkObj that takes a parameter called checkProp
+  // Your Code Here
+  if (myObj[checkProp]){ //if myObj[and parameter] exists (is true) within the Object variable
+    return myObj[checkProp]; //return myObj[parameter]'s value
+  } else { // if not found
+    return "Not Found"; //return not found
+  }
+  
+}
+
+// Test your code by modifying these values
+console.log(checkObj("gift"));
+console.log(checkObj("pet"));
+
+
+// Testing Objects for Properties 
+// Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.
+
+// Example
+
+// var myObj = {
+//   top: "hat",
+//   bottom: "pants"
+// };
+// myObj.hasOwnProperty("top");    // true
+// myObj.hasOwnProperty("middle"); // false
+// Instructions
+// Modify the function checkObj to test myObj for checkProp. If the property is found, return that property's value. If not, return "Not Found".
