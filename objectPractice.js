@@ -185,3 +185,55 @@ console.log(gloveBoxContents);
 // ourStorage.desk.drawer; // "stapler"
 // Instructions
 // Access the myStorage object and assign the contents of the glove box property to the gloveBoxContents variable. Use bracket notation for properties with a space in their name.
+
+//Accessing Nested Arrays 
+// Setup
+var myPlants = [
+  { 
+    type: "flowers",
+    list: [
+      "rose",
+      "tulip",
+      "dandelion"
+    ]
+  },
+  {
+    type: "trees",
+    list: [
+      "fir",
+      "pine",
+      "birch"
+    ]
+  }  
+];
+
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; // Change this line
+console.log(secondTree);
+
+// As we have seen in earlier examples, objects can contain both nested objects and nested arrays. Similar to accessing nested objects, Array bracket notation can be chained to access nested arrays.
+// Here is an example of how to access a nested array:
+
+// var ourPets = [
+//   {
+//     animalType: "cat",
+//     names: [
+//       "Meowzer",
+//       "Fluffy",
+//       "Kit-Cat"
+//     ]
+//   },
+//   {
+//     animalType: "dog",
+//     names: [
+//       "Spot",
+//       "Bowser",
+//       "Frankie"
+//     ]
+//   }
+// ];
+// ourPets[0].names[1]; // "Fluffy"
+// ourPets[1].names[0]; // "Spot"
+// Instructions
+// Retrieve the second tree from the variable myPlants using object dot and array bracket notation.
